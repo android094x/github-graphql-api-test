@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[LIVE DEMO](https://github-graphql-api-test.vercel.app/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -18,17 +18,14 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## What you will find here
 
-To learn more about Next.js, take a look at the following resources:
+You will be able to register and login with a valid github user
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Once you logged in, you'll see your repositories and starred repositories, also there's a tab "Favorite Repositories" this is not form GitHub but there you can just add repos as favorites and will be stored in a postgres DB, it's just to add, the functionality to remove isn't working yet.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You also can search for valid GitHub usernames and see kind of a simple profile with some info of the user.
 
-## Deploy on Vercel
+## Note
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+There kind of a problem with the pagination from the GitHub GraphQL API, I don't know yet how to solve it. You can click "next" to fetch more repositories and paginate, but once you click "prev" if goes back to page one, I was testing this in the GraphiQL explorer from github and is the same thing.
